@@ -13,8 +13,7 @@ Usage:
 TRIE.ADD <key> <value>
 ```
 Example: 
-TRIE.ADD hello world
-
+TRIE.ADD hello world  
 
 2. TRIE.SEARCH: Searches for a key and returns its associated value.
 
