@@ -13,8 +13,9 @@ Usage:
 TRIE.ADD <key> <value>
 ```
 Example: 
-TRIE.ADD hello world  
-<br>
+```
+TRIE.ADD hello world
+```
 
 2. TRIE.SEARCH: Searches for a key and returns its associated value.
 
@@ -23,8 +24,9 @@ Usage:
 TRIE.SEARCH <key>
 ```
 Example:
+```
 TRIE.SEARCH hello
-
+```
 
 3. TRIE.PREFIX_SEARCH: Retrieves all key-value pairs that match a given prefix.
 
@@ -33,8 +35,9 @@ Usage:
 TRIE.PREFIX_SEARCH <prefix>
 ```
 Example:
+```
 TRIE.PREFIX_SEARCH hel
-
+```
 
 4. TRIE.DELETE: Removes a key-value pair from the Trie.
 
@@ -44,8 +47,9 @@ TRIE.DELETE <key>
 ```
 
 Example:
+```
 TRIE.DELETE hello
-
+```
 
 5. TRIE.WILDCARD_SEARCH: Searches for keys using wildcard patterns (*, ?).
 
@@ -54,7 +58,9 @@ Usage:
 TRIE.WILDCARD_SEARCH <pattern>
 ```
 Example:
+```
 TRIE.WILDCARD_SEARCH h*l?o
+```
 
 ## Installation
 ### Prerequisites
@@ -112,14 +118,16 @@ The Trie module has been benchmarked for performance compared to Redis' native H
 
 1. Add new commands by updating src/module.c and implementing their logic in src/trie.c.
 2. Rebuild the module using:
+   ```
    make clean
    make
-
+   ```
 ## Testing
 1. Start the Redis server with the module loaded.
 2. Run the included benchmark script:
+   ```
    python redis_test.py
-
+   ```
 Example results:
 - TRIE.ADD latency for 10,000 items: 0.25 seconds
 - TRIE.SEARCH latency for 10,000 items: 0.22 seconds
