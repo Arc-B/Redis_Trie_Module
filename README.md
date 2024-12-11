@@ -12,7 +12,7 @@ Usage:
 ```bash
 TRIE.ADD <key> <value>
 ```
-Example: #
+Example: 
 TRIE.ADD hello world
 
 
@@ -36,20 +36,23 @@ Example:
 TRIE.PREFIX_SEARCH hel
 
 
-# 4. TRIE.DELETE: Removes a key-value pair from the Trie.
+4. TRIE.DELETE: Removes a key-value pair from the Trie.
 
 Usage:
+```bash
 TRIE.DELETE <key>
+```
 
 Example:
 TRIE.DELETE hello
 
 
-# 5. TRIE.WILDCARD_SEARCH: Searches for keys using wildcard patterns (*, ?).
+5. TRIE.WILDCARD_SEARCH: Searches for keys using wildcard patterns (*, ?).
 
 Usage:
+```bash
 TRIE.WILDCARD_SEARCH <pattern>
-
+```
 Example:
 TRIE.WILDCARD_SEARCH h*l?o
 
