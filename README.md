@@ -5,12 +5,13 @@ This project is a Redis extension that introduces Trie (prefix tree) functionali
 
 ## Features
 
-```bash
+
 # 1. TRIE.ADD: Adds a key-value pair to the Trie.
 
 Usage:
+```bash
 TRIE.ADD <key> <value>
-
+```
 Example:
 TRIE.ADD hello world
 
