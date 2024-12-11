@@ -14,6 +14,7 @@ TRIE.ADD <key> <value>
 ```
 Example: 
 TRIE.ADD hello world  
+<br>
 
 2. TRIE.SEARCH: Searches for a key and returns its associated value.
 
@@ -64,22 +65,28 @@ TRIE.WILDCARD_SEARCH h*l?o
 ### Steps to Compile and Run
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/<your-repo>/Redis_Trie_Module.git
    cd Redis_Trie_Module
-
+   ```
 2. Build the module:
+   ```bash
    make clean
    make
+   ```
    Ensure the trie_module.so file is generated in the project directory.
-
+   
 3. Start the Redis server and load the module:
+   ```
    redis-server --loadmodule /path/to/trie_module.so --port <port>
+   ```
 
 4. Test the module using the Redis CLI:
+   ```
    redis-cli -p <port>
    TRIE.ADD hello world
    TRIE.SEARCH hello
-
+   ```
 ## Benchmarks
 The Trie module has been benchmarked for performance compared to Redis' native HSET commands:
 
