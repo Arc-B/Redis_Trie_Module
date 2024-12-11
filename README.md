@@ -16,6 +16,7 @@ Example:
 TRIE.ADD hello world
 
 
+
 2. TRIE.SEARCH: Searches for a key and returns its associated value.
 
 Usage:
@@ -24,6 +25,7 @@ TRIE.SEARCH <key>
 ```
 Example:
 TRIE.SEARCH hello
+
 
 
 3. TRIE.PREFIX_SEARCH: Retrieves all key-value pairs that match a given prefix.
