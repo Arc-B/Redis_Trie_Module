@@ -6,7 +6,7 @@ This project is a Redis extension that introduces Trie (prefix tree) functionali
 ## Features
 
 
-# 1. TRIE.ADD: Adds a key-value pair to the Trie.
+1. TRIE.ADD: Adds a key-value pair to the Trie.
 
 Usage:
 ```bash
@@ -16,20 +16,22 @@ Example:
 TRIE.ADD hello world
 
 
-# 2. TRIE.SEARCH: Searches for a key and returns its associated value.
+2. TRIE.SEARCH: Searches for a key and returns its associated value.
 
 Usage:
+```bash
 TRIE.SEARCH <key>
-
+```
 Example:
 TRIE.SEARCH hello
 
 
-# 3. TRIE.PREFIX_SEARCH: Retrieves all key-value pairs that match a given prefix.
+3. TRIE.PREFIX_SEARCH: Retrieves all key-value pairs that match a given prefix.
 
 Usage:
+```bash
 TRIE.PREFIX_SEARCH <prefix>
-
+```
 Example:
 TRIE.PREFIX_SEARCH hel
 
